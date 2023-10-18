@@ -365,12 +365,15 @@ class App(ctk.CTk, BackEnd):
             padx=10,
             pady=8)
 
+    
+    # Limpando as entry de cadastro
     def limpa_entry_cadastro(self):
         self.username_cadastro_entry.delete(0, END)
         self.email_cadastro_entry.delete(0, END)
         self.senha_cadastro_entry.delete(0, END)
         self.confirmar_senha_entry.delete(0, END)
 
+    # Limpando as entry de login
     def limpa_entry_login(self):
         self.username_login_entry.delete(0, END)
         self.senha_login_entry.delete(0, END)
