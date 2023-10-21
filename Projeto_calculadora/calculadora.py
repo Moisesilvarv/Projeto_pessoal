@@ -432,11 +432,16 @@ class App(ctk.CTk, BackEnd):
             y=375
         )
 
-    def fechar_janela(self):
+     def fechar_janela(self):
+
         # Função para confirmar o fechamento da janela
+
         confirmacao = messagebox.askokcancel("Calculadora", "Tem certeza de que deseja sairora?")
+
+        # Fecha a janela se o usuário confirmar
+
         if confirmacao:
-            self.destroy()  # Fecha a janela se o usuário confirmar
+            self.destroy() 
 
 if __name__ == "__main__":
     app = App()
